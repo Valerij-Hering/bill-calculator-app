@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap");
+
+* {
+    font-family: "Source Sans Pro", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#EBECF0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 30%;
+    background-color:#EBECF0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    color: #1a3b5d;
+    /* box-shadow: -5px -5px 20px #fff,  5px 5px 20px #BABECC; */
+}
+
+
+
+h1 {
+    
+    color: #1a3b5d;
+    align-self: center;
+    text-shadow: 1px 1px 0 white;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+input {
+    font-size: 16px;
+    background-color:#EBECF0;
+    padding: 8px;
+
+    width: 95%;
+    outline: none;
+    border-radius: 20px;
+    color: #61677C;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow:  inset 2px 2px 5px #BABECC, inset -5px -5px 10px #fff;
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border: none;
+    text-shadow: 1px 1px 0 white;
+    appearance: none;
+}
+
+input:focus {
+    box-shadow:  inset 1px 1px 2px #BABECC, inset -1px -1px 2px #fff;
+    background-color: #EBECF0;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #fff !important;
+    transition: background-color 5000s ease-in-out 0s;
+} 
+
+
+#btn {
+    width: 95%;
+    text-shadow: 1px 1px 0 white;
+    font-size: 19px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 15px;
+    color: #AE1100;
+    box-shadow: -5px -5px 20px #fff,  5px 5px 20px #BABECC;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 700;
+    margin-bottom: 40px;
+    flex: 1;
+}
+
+#btn:hover {
+    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #BABECC;
+}
+
+#btn:active {
+    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #fff;
+}
+
+#showTotalAmountToPay {
+    width: 95%;
+}
+
+.tip {
+    margin-bottom: 10px;
+    display: flex;
+
+    justify-content: center;
+}
+
+.btnTip {
+    box-shadow: -5px -5px 20px #fff,  5px 5px 20px #BABECC;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.emoji {
+    font-size: 25px;
+    text-shadow: 1px 1px 1px white;
+    color: #61677C;
+    font-weight: normal;
+}
+
+.emoji:hover {
+    color: #AE1100;
+}
+
+.btnTip:hover {
+    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #BABECC;
+}
+
+.btnTip:active {
+    box-shadow: inset 7px 7px 8px #BABECC, inset -7px -7px 8px #fff;
+    transition: 0.4s;
+}
+
+.btnTip:focus {
+    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #fff;
+
+}
+
+.emoji:active {
+    color: #AE1100;
+}
+
+#showTotalAmountToPay {
+    display: flex;
+}
+
+.billSplit, .totalTip, .totalAmount {
+    margin: 6px;
+    flex:1;
+    padding: 25px;
+    border-radius: 5px;
+    /* border: #2f3545 0.5px solid; */
+    text-align: center;
+    box-shadow: -5px -5px 20px #fff,  5px 5px 20px #BABECC;
+    color: #1a3b5d;
+    text-shadow: 1px 1px 1px white;
+    margin-bottom: 40px;
+}
+
+.billSplit:hover {
+    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #BABECC;
+}
+
+.totalTip:hover {
+    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #BABECC;
+}
+
+.totalAmount:hover {
+    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #BABECC;
+}
+
+p {
+    text-align: center;
+    color: #1a3b5d;
+    text-shadow: 1px 1px 1px white;
+    font-size: 16px;
+}
+
+#dividedBill, #dividedTip, #billAndTip {
+    color: #AE1100;
+ 
+}
+
+.inputCheck {
+    width: 50px;
+    height: 50px;
+    
+}
+
+.inputCheck:hover {
+    color: #AE1100;
+}
+
+.check2:before {
+    width: 50px;
+    height: 50px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 26px;
+
+    content: "\f11a";
+}
+
+.check2:focus {
+    color: #AE1100;
+}
+
+.check1:before {
+    width: 50px;
+    height: 50px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 26px;
+    content: "\f119";
+}
+
+.check1:focus {
+    color: #AE1100;
+}
+
+.check3:before {
+    width: 50px;
+    height: 50px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 26px;
+    content: "\f118";
+}
+
+.check3:focus {
+    color: #AE1100;
+}
+
+.check4:before {
+    width: 50px;
+    height: 50px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 26px;
+    content: "\f5b8";
+}
+
+.check4:focus {
+    color: #AE1100;
+}
+
+
+
+.toolTip {
+    position: relative;
+    display: inline-block;
+}
+
+.toolTip .toolTipText {
+    visibility: hidden;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -40px;
+    background-color: #fff;
+    border: #fff 1px solid;
+    color: #4e5262;
+    text-shadow: none;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px white;
+    box-shadow:  2px 2px 7px rgb(147, 147, 147);
+    -webkit-box-shadow:  2px 2px 7px rgb(147, 147, 147);
+}
+
+.toolTip .toolTipText:after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    background-color: #eeeeee00;
+}
+
+.toolTip:hover .toolTipText {
+    visibility: visible;
+}
+
+.numberTip {
+    color: #AE1100;
+}
+
+.parBillAndTip {
+    font-size: 20px;
+}
+
+@media all and (max-width: 1000px) {
+    #container {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #container {
+        width: 100%;
+    }
+}
